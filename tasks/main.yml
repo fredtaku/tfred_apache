@@ -1,0 +1,111 @@
+---
+# tasks file for apache
+
+
+- name: install apache 
+  import_tasks: install-httpd.yml
+  become: yes
+
+- name: create apache user and directory for the virtual host
+  import_tasks: create_dir.yml
+  become: yes
+
+
+  
+- name: set selinux context for the new virtual directory
+  import_tasks: selinux.yml
+  become: yes
+
+
+- name: start httpd service and also open firewalls
+  import_tasks: start_httpd.yml
+  become: yes
+
+
+
+- name: deploy website page with jinja2 templating to get fqdn 
+  import_tasks: websitepage.yml
+  become: yes
+
+
+- name: use template module to set up vhost in host3
+  import_tasks: template.yml
+  become: yes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

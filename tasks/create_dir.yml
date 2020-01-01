@@ -1,0 +1,48 @@
+---
+
+- user: 
+    name: apache
+    state: present
+
+
+
+- file:
+    name: /vhost-dir
+    state: directory 
+    owner: apache
+    group: apache 
+    mode: 0775
+    recurse: true
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

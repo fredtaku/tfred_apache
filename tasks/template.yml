@@ -1,0 +1,39 @@
+---
+
+- name: use vhost_config.j2 to configure host3 virtual host
+  template: src="vhost_host3.j2" dest="/etc/httpd/conf.d/vhost_host3.conf"
+  changed_when: yes
+  notify: 
+    - "restart httpd"
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+---
+
+- name: restart httpd service by handler
+  service:
+     name: httpd
+     state: restarted
+  listen: 'restart httpd'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

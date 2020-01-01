@@ -1,0 +1,77 @@
+---
+
+- name: start httpd
+  service:
+      name: httpd
+      state: started 
+      enabled: yes
+
+
+- name: install firewalld if not installed
+  yum:
+    name: firewalld
+    state: latest
+    
+
+- name: start firewalld service 
+  service:
+     name: firewalld
+     state: started 
+     enabled: yes
+
+
+ 
+- name: open port 80 on firewall
+  firewalld:
+     service: http
+     state: enabled
+     immediate: yes
+     permanent: yes
+
+- name: 
+  debug:
+    msg: "This should restart httpd every time this task runs"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

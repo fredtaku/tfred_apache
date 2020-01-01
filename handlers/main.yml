@@ -1,0 +1,36 @@
+---
+# handlers file for apache
+
+- import_tasks: restart_httpd.yml
+  become: yes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

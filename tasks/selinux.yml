@@ -1,0 +1,44 @@
+---
+
+- selinux:
+     state: enforcing
+     policy: targeted 
+
+- sefcontext:
+      target: /vhost-dir
+      setype: httpd_sys_rw_content_t
+      state: present 
+
+- command: restorecon -vR /vhost-dir
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
